@@ -18,11 +18,8 @@ echo ""
 echo "[info] Setting kernel parameters (requires password)..."
 echo ""
 
-sudo sysctl -w kern.sysv.shmmax=52428800
-sudo sysctl -w kern.sysv.shmmin=1
-sudo sysctl -w kern.sysv.shmmni=128
-sudo sysctl -w kern.sysv.shmseg=32
-sudo sysctl -w kern.sysv.shmall=12800
+sudo sysctl -w kern.sysv.shmmax=104857600
+sudo sysctl -w kern.sysv.shmall=25600
 
 echo ""
 echo "[ok] Kernel parameters configured successfully!"
