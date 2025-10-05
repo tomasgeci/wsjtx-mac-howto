@@ -48,10 +48,8 @@ The script will:
 
 You should see output like:
 ```
-kern.sysv.shmmax: 4194304 -> 52428800
-kern.sysv.shmmin: 1 -> 1
-kern.sysv.shmmni: 32 -> 128
-...
+kern.sysv.shmmax: 4194304 -> 104857600
+kern.sysv.shmall: 1024 -> 25600
 ```
 
 ## Step 4: Launch WSJT-X
@@ -71,7 +69,7 @@ Now you can open WSJT-X normally from Applications.
 
 **"Unable to create shared memory segment" error:**
 - Make sure you ran the script before launching WSJT-X
-- Verify with: `sysctl kern.sysv.shmmax` (should show `52428800`)
+- Verify with: `sysctl kern.sysv.shmmax` (should show `104857600`)
 - If not, re-run the script
 
 **Script asks for password:**

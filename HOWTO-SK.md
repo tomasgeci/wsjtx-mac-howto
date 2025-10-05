@@ -48,10 +48,8 @@ Skript:
 
 Mali by ste vidieť výstup ako:
 ```
-kern.sysv.shmmax: 4194304 -> 52428800
-kern.sysv.shmmin: 1 -> 1
-kern.sysv.shmmni: 32 -> 128
-...
+kern.sysv.shmmax: 4194304 -> 104857600
+kern.sysv.shmall: 1024 -> 25600
 ```
 
 ## Krok 4: Spustiť WSJT-X
@@ -71,7 +69,7 @@ Teraz môžete normálne otvoriť WSJT-X z priečinka Aplikácie.
 
 **Chyba "Unable to create shared memory segment":**
 - Uistite sa, že ste spustili skript pred spustením WSJT-X
-- Overte pomocou: `sysctl kern.sysv.shmmax` (malo by ukázať `52428800`)
+- Overte pomocou: `sysctl kern.sysv.shmmax` (malo by ukázať `104857600`)
 - Ak nie, znovu spustite skript
 
 **Skript žiada heslo:**

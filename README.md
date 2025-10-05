@@ -31,10 +31,7 @@ chmod +x ~/wsjtx.sh
 ## What it does
 
 Sets these kernel parameters:
-- `kern.sysv.shmmax=52428800`
-- `kern.sysv.shmmin=1`
-- `kern.sysv.shmmni=128`
-- `kern.sysv.shmseg=32`
-- `kern.sysv.shmall=12800`
+- `kern.sysv.shmmax=104857600`
+- `kern.sysv.shmall=25600`
 
 Settings are temporary and reset after reboot (by design).

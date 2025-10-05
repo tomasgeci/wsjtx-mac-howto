@@ -11,7 +11,7 @@ echo ""
 
 # Check current values
 echo "[info] Current shared memory settings:"
-sysctl kern.sysv.shmmax kern.sysv.shmmin kern.sysv.shmmni kern.sysv.shmseg kern.sysv.shmall 2>/dev/null || true
+sysctl kern.sysv.shmmax kern.sysv.shmall 2>/dev/null || true
 echo ""
 
 # Set required parameters
